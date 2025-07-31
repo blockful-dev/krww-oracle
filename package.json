@@ -1,0 +1,44 @@
+{
+  "name": "krww-oracle",
+  "version": "1.0.0",
+  "description": "A blockchain oracle aggregating price feeds from multiple sources",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "watch": "ts-node --watch src/index.ts",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["oracle", "blockchain", "price-feeds", "defi"],
+  "author": "blockful-dev",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.0",
+    "express": "^4.19.0",
+    "node-cron": "^3.0.3",
+    "winston": "^3.11.0",
+    "dotenv": "^16.4.0",
+    "@pythnetwork/hermes-client": "^2.0.0",
+    "@chainlink/contracts": "^0.8.0",
+    "ethers": "^6.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/express": "^4.17.21",
+    "@types/node-cron": "^3.0.11",
+    "@types/jest": "^29.5.12",
+    "typescript": "^5.5.0",
+    "ts-node": "^10.9.2",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.0",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "eslint": "^8.57.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
